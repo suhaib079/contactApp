@@ -1,5 +1,6 @@
 @extends('layouts.layout')
+
 @section('content')
     
-<h1>welcome</h1>
+<h1>all contact page</h1>
 @endsection
