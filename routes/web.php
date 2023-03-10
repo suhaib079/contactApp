@@ -33,3 +33,5 @@ Route::post('/contacts/create', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/contacts/update/{id}', [App\Http\Controllers\HomeController::class, 'update']);
+Route::post('/contacts/update', [App\Http\Controllers\HomeController::class, 'showupdate']);

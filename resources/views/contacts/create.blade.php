@@ -30,7 +30,7 @@
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">salary</label>
-      <input type="text" class="form-control" id="exampleInputPassword1" name="salary">
+      <input type="number" class="form-control" id="exampleInputPassword1" name="salary">
     </div>
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">join date</label>

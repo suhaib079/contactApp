@@ -20,7 +20,7 @@
             <td>{{$item->phone_number}}</td>
             <td>
               <button>Delete</button>
-              <a href="">update </a>
+              <a href="{{url('contacts/update/' . $item->id)}}">update </a>
               <button>info</button>
             </td>
           </tr>
