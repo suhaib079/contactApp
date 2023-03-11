@@ -55,4 +55,17 @@ class HomeController extends Controller
         $employees->save();
         return redirect('home');
     }
+     function delete($id){
+        $employees=Employee::find($id);
+        $employees->delete();
+        return redirect('home');
+        
+    }
+
+    public function x($id)
+    { 
+        $employee = Employee::findOrFail($id); 
+         
+        return view('contacts/show', compact('employee'));
+    }
 }

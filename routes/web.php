@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/contacts', function () {
     return view('contacts.index');
 });
@@ -34,4 +35,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contacts/update/{id}', [App\Http\Controllers\HomeController::class, 'update']);
+Route::get('/contacts/show/{id}', [App\Http\Controllers\HomeController::class, 'x']);
 Route::post('/contacts/update', [App\Http\Controllers\HomeController::class, 'showupdate']);
+Route::get('delete/{id}', [App\Http\Controllers\HomeController::class, 'delete']);
